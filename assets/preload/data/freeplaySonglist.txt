@@ -1,0 +1,8 @@
+Tutorial:gf:1
+wtf:gun-yes-gun:1
+epic:gun-yes-gun:1
+gun:gun-p2-yes-gun-p2:1
+bad-day:gun-clone-yes-gun-clone:2
+ham:ham:3
+redeember:dark:4
+boss-zone:boss:5

@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="RedBlue_Gun_Phase_2_Assets.png">
+	<!-- Created with Adobe Animate version 20.0.3.25487 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="Gun Sing Note DOWN0000" x="0" y="0" width="374" height="433" frameX="0" frameY="-3" frameWidth="374" frameHeight="437"/>
+	<SubTexture name="Gun Sing Note DOWN0001" x="0" y="0" width="374" height="433" frameX="0" frameY="-3" frameWidth="374" frameHeight="437"/>
+	<SubTexture name="Gun Sing Note DOWN0002" x="374" y="0" width="367" height="437" frameX="-1" frameY="0" frameWidth="374" frameHeight="437"/>
+	<SubTexture name="Gun Sing Note DOWN0003" x="374" y="0" width="367" height="437" frameX="-1" frameY="0" frameWidth="374" frameHeight="437"/>
+	<SubTexture name="Gun Sing Note DOWN0004" x="374" y="0" width="367" height="437" frameX="-1" frameY="0" frameWidth="374" frameHeight="437"/>
+	<SubTexture name="Gun Sing Note DOWN0005" x="374" y="0" width="367" height="437" frameX="-1" frameY="0" frameWidth="374" frameHeight="437"/>
+	<SubTexture name="Gun Sing Note DOWN0006" x="374" y="0" width="367" height="437" frameX="-1" frameY="0" frameWidth="374" frameHeight="437"/>
+	<SubTexture name="Gun Sing Note DOWN0007" x="374" y="0" width="367" height="437" frameX="-1" frameY="0" frameWidth="374" frameHeight="437"/>
+	<SubTexture name="Gun Sing Note DOWN0008" x="374" y="0" width="367" height="437" frameX="-1" frameY="0" frameWidth="374" frameHeight="437"/>
+	<SubTexture name="Gun Sing Note DOWN0009" x="374" y="0" width="367" height="437" frameX="-1" frameY="0" frameWidth="374" frameHeight="437"/>
+	<SubTexture name="Gun Sing Note DOWN0010" x="374" y="0" width="367" height="437" frameX="-1" frameY="0" frameWidth="374" frameHeight="437"/>
+	<SubTexture name="Gun Sing Note DOWN0011" x="374" y="0" width="367" height="437" frameX="-1" frameY="0" frameWidth="374" frameHeight="437"/>
+	<SubTexture name="Gun Sing Note DOWN0012" x="374" y="0" width="367" height="437" frameX="-1" frameY="0" frameWidth="374" frameHeight="437"/>
+	<SubTexture name="Gun Sing Note DOWN0013" x="374" y="0" width="367" height="437" frameX="-1" frameY="0" frameWidth="374" frameHeight="437"/>
+	<SubTexture name="Gun Sing Note DOWN0014" x="374" y="0" width="367" height="437" frameX="-1" frameY="0" frameWidth="374" frameHeight="437"/>
+	<SubTexture name="Gun Sing Note DOWN0015" x="374" y="0" width="367" height="437" frameX="-1" frameY="0" frameWidth="374" frameHeight="437"/>
+	<SubTexture name="Gun Sing Note LEFT0000" x="741" y="0" width="363" height="463" frameX="0" frameY="0" frameWidth="365" frameHeight="463"/>
+	<SubTexture name="Gun Sing Note LEFT0001" x="741" y="0" width="363" height="463" frameX="0" frameY="0" frameWidth="365" frameHeight="463"/>
+	<SubTexture name="Gun Sing Note LEFT0002" x="1104" y="0" width="363" height="463" frameX="-2" frameY="0" frameWidth="365" frameHeight="463"/>
+	<SubTexture name="Gun Sing Note LEFT0003" x="1104" y="0" width="363" height="463" frameX="-2" frameY="0" frameWidth="365" frameHeight="463"/>
+	<SubTexture name="Gun Sing Note LEFT0004" x="1104" y="0" width="363" height="463" frameX="-2" frameY="0" frameWidth="365" frameHeight="463"/>
+	<SubTexture name="Gun Sing Note LEFT0005" x="1104" y="0" width="363" height="463" frameX="-2" frameY="0" frameWidth="365" frameHeight="463"/>
+	<SubTexture name="Gun Sing Note LEFT0006" x="1104" y="0" width="363" height="463" frameX="-2" frameY="0" frameWidth="365" frameHeight="463"/>
+	<SubTexture name="Gun Sing Note LEFT0007" x="1104" y="0" width="363" height="463" frameX="-2" frameY="0" frameWidth="365" frameHeight="463"/>
+	<SubTexture name="Gun Sing Note LEFT0008" x="1104" y="0" width="363" height="463" frameX="-2" frameY="0" frameWidth="365" frameHeight="463"/>
+	<SubTexture name="Gun Sing Note LEFT0009" x="1104" y="0" width="363" height="463" frameX="-2" frameY="0" frameWidth="365" frameHeight="463"/>
+	<SubTexture name="Gun Sing Note LEFT0010" x="1104" y="0" width="363" height="463" frameX="-2" frameY="0" frameWidth="365" frameHeight="463"/>
+	<SubTexture name="Gun Sing Note LEFT0011" x="1104" y="0" width="363" height="463" frameX="-2" frameY="0" frameWidth="365" frameHeight="463"/>
+	<SubTexture name="Gun Sing Note LEFT0012" x="1104" y="0" width="363" height="463" frameX="-2" frameY="0" frameWidth="365" frameHeight="463"/>
+	<SubTexture name="Gun Sing Note LEFT0013" x="1104" y="0" width="363" height="463" frameX="-2" frameY="0" frameWidth="365" frameHeight="463"/>
+	<SubTexture name="Gun Sing Note LEFT0014" x="1104" y="0" width="363" height="463" frameX="-2" frameY="0" frameWidth="365" frameHeight="463"/>
+	<SubTexture name="Gun Sing Note LEFT0015" x="1104" y="0" width="363" height="463" frameX="-2" frameY="0" frameWidth="365" frameHeight="463"/>
+	<SubTexture name="Gun Sing Note RIGHT0000" x="1467" y="0" width="359" height="457" frameX="-4" frameY="0" frameWidth="363" frameHeight="457"/>
+	<SubTexture name="Gun Sing Note RIGHT0001" x="1467" y="0" width="359" height="457" frameX="-4" frameY="0" frameWidth="363" frameHeight="457"/>
+	<SubTexture name="Gun Sing Note RIGHT0002" x="0" y="463" width="359" height="455" frameX="0" frameY="-2" frameWidth="363" frameHeight="457"/>
+	<SubTexture name="Gun Sing Note RIGHT0003" x="0" y="463" width="359" height="455" frameX="0" frameY="-2" frameWidth="363" frameHeight="457"/>
+	<SubTexture name="Gun Sing Note RIGHT0004" x="0" y="463" width="359" height="455" frameX="0" frameY="-2" frameWidth="363" frameHeight="457"/>
+	<SubTexture name="Gun Sing Note RIGHT0005" x="0" y="463" width="359" height="455" frameX="0" frameY="-2" frameWidth="363" frameHeight="457"/>
+	<SubTexture name="Gun Sing Note RIGHT0006" x="0" y="463" width="359" height="455" frameX="0" frameY="-2" frameWidth="363" frameHeight="457"/>
+	<SubTexture name="Gun Sing Note RIGHT0007" x="0" y="463" width="359" height="455" frameX="0" frameY="-2" frameWidth="363" frameHeight="457"/>
+	<SubTexture name="Gun Sing Note RIGHT0008" x="0" y="463" width="359" height="455" frameX="0" frameY="-2" frameWidth="363" frameHeight="457"/>
+	<SubTexture name="Gun Sing Note RIGHT0009" x="0" y="463" width="359" height="455" frameX="0" frameY="-2" frameWidth="363" frameHeight="457"/>
+	<SubTexture name="Gun Sing Note RIGHT0010" x="0" y="463" width="359" height="455" frameX="0" frameY="-2" frameWidth="363" frameHeight="457"/>
+	<SubTexture name="Gun Sing Note RIGHT0011" x="0" y="463" width="359" height="455" frameX="0" frameY="-2" frameWidth="363" frameHeight="457"/>
+	<SubTexture name="Gun Sing Note RIGHT0012" x="0" y="463" width="359" height="455" frameX="0" frameY="-2" frameWidth="363" frameHeight="457"/>
+	<SubTexture name="Gun Sing Note RIGHT0013" x="0" y="463" width="359" height="455" frameX="0" frameY="-2" frameWidth="363" frameHeight="457"/>
+	<SubTexture name="Gun Sing Note RIGHT0014" x="0" y="463" width="359" height="455" frameX="0" frameY="-2" frameWidth="363" frameHeight="457"/>
+	<SubTexture name="Gun Sing Note RIGHT0015" x="0" y="463" width="359" height="455" frameX="0" frameY="-2" frameWidth="363" frameHeight="457"/>
+	<SubTexture name="Gun Sing Note RIGHT0016" x="0" y="463" width="359" height="455" frameX="0" frameY="-2" frameWidth="363" frameHeight="457"/>
+	<SubTexture name="Gun Sing Note RIGHT0017" x="0" y="463" width="359" height="455" frameX="0" frameY="-2" frameWidth="363" frameHeight="457"/>
+	<SubTexture name="Gun Sing Note RIGHT0018" x="0" y="463" width="359" height="455" frameX="0" frameY="-2" frameWidth="363" frameHeight="457"/>
+	<SubTexture name="Gun Sing Note UP0000" x="359" y="463" width="353" height="466" frameX="0" frameY="0" frameWidth="355" frameHeight="466"/>
+	<SubTexture name="Gun Sing Note UP0001" x="359" y="463" width="353" height="466" frameX="0" frameY="0" frameWidth="355" frameHeight="466"/>
+	<SubTexture name="Gun Sing Note UP0002" x="712" y="463" width="355" height="464" frameX="0" frameY="-2" frameWidth="355" frameHeight="466"/>
+	<SubTexture name="Gun Sing Note UP0003" x="712" y="463" width="355" height="464" frameX="0" frameY="-2" frameWidth="355" frameHeight="466"/>
+	<SubTexture name="Gun Sing Note UP0004" x="712" y="463" width="355" height="464" frameX="0" frameY="-2" frameWidth="355" frameHeight="466"/>
+	<SubTexture name="Gun Sing Note UP0005" x="712" y="463" width="355" height="464" frameX="0" frameY="-2" frameWidth="355" frameHeight="466"/>
+	<SubTexture name="Gun Sing Note UP0006" x="712" y="463" width="355" height="464" frameX="0" frameY="-2" frameWidth="355" frameHeight="466"/>
+	<SubTexture name="Gun Sing Note UP0007" x="712" y="463" width="355" height="464" frameX="0" frameY="-2" frameWidth="355" frameHeight="466"/>
+	<SubTexture name="Gun Sing Note UP0008" x="712" y="463" width="355" height="464" frameX="0" frameY="-2" frameWidth="355" frameHeight="466"/>
+	<SubTexture name="Gun Sing Note UP0009" x="712" y="463" width="355" height="464" frameX="0" frameY="-2" frameWidth="355" frameHeight="466"/>
+	<SubTexture name="Gun Sing Note UP0010" x="712" y="463" width="355" height="464" frameX="0" frameY="-2" frameWidth="355" frameHeight="466"/>
+	<SubTexture name="Gun Sing Note UP0011" x="712" y="463" width="355" height="464" frameX="0" frameY="-2" frameWidth="355" frameHeight="466"/>
+	<SubTexture name="Gun Sing Note UP0012" x="712" y="463" width="355" height="464" frameX="0" frameY="-2" frameWidth="355" frameHeight="466"/>
+	<SubTexture name="Gun Sing Note UP0013" x="712" y="463" width="355" height="464" frameX="0" frameY="-2" frameWidth="355" frameHeight="466"/>
+	<SubTexture name="Gun Sing Note UP0014" x="712" y="463" width="355" height="464" frameX="0" frameY="-2" frameWidth="355" frameHeight="466"/>
+	<SubTexture name="Gun Sing Note UP0015" x="712" y="463" width="355" height="464" frameX="0" frameY="-2" frameWidth="355" frameHeight="466"/>
+	<SubTexture name="Gun Sing Note UP0016" x="712" y="463" width="355" height="464" frameX="0" frameY="-2" frameWidth="355" frameHeight="466"/>
+	<SubTexture name="Gun Sing Note UP0017" x="712" y="463" width="355" height="464" frameX="0" frameY="-2" frameWidth="355" frameHeight="466"/>
+	<SubTexture name="Gun Sing Note UP0018" x="712" y="463" width="355" height="464" frameX="0" frameY="-2" frameWidth="355" frameHeight="466"/>
+	<SubTexture name="Gun Sing Note UP0019" x="712" y="463" width="355" height="464" frameX="0" frameY="-2" frameWidth="355" frameHeight="466"/>
+	<SubTexture name="Gun Sing Note UP0020" x="712" y="463" width="355" height="464" frameX="0" frameY="-2" frameWidth="355" frameHeight="466"/>
+	<SubTexture name="Gun Sing Note UP0021" x="712" y="463" width="355" height="464" frameX="0" frameY="-2" frameWidth="355" frameHeight="466"/>
+	<SubTexture name="Gun Sing Note UP0022" x="712" y="463" width="355" height="464" frameX="0" frameY="-2" frameWidth="355" frameHeight="466"/>
+	<SubTexture name="Gun Sing Note UP0023" x="712" y="463" width="355" height="464" frameX="0" frameY="-2" frameWidth="355" frameHeight="466"/>
+	<SubTexture name="Gun Sing Note UP0024" x="712" y="463" width="355" height="464" frameX="0" frameY="-2" frameWidth="355" frameHeight="466"/>
+	<SubTexture name="Gun Sing Note UP0025" x="712" y="463" width="355" height="464" frameX="0" frameY="-2" frameWidth="355" frameHeight="466"/>
+	<SubTexture name="Gun Sing Note UP0026" x="712" y="463" width="355" height="464" frameX="0" frameY="-2" frameWidth="355" frameHeight="466"/>
+	<SubTexture name="Gun Sing Note UP0027" x="712" y="463" width="355" height="464" frameX="0" frameY="-2" frameWidth="355" frameHeight="466"/>
+	<SubTexture name="Gun Sing Note UP0028" x="712" y="463" width="355" height="464" frameX="0" frameY="-2" frameWidth="355" frameHeight="466"/>
+	<SubTexture name="Gun Sing Note UP0029" x="712" y="463" width="355" height="464" frameX="0" frameY="-2" frameWidth="355" frameHeight="466"/>
+	<SubTexture name="Gun Sing Note UP0030" x="712" y="463" width="355" height="464" frameX="0" frameY="-2" frameWidth="355" frameHeight="466"/>
+	<SubTexture name="Gun Sing Note UP0031" x="712" y="463" width="355" height="464" frameX="0" frameY="-2" frameWidth="355" frameHeight="466"/>
+	<SubTexture name="Gun Sing Note UP0032" x="712" y="463" width="355" height="464" frameX="0" frameY="-2" frameWidth="355" frameHeight="466"/>
+	<SubTexture name="Gun Sing Note UP0033" x="712" y="463" width="355" height="464" frameX="0" frameY="-2" frameWidth="355" frameHeight="466"/>
+	<SubTexture name="Gun Sing Note UP0034" x="712" y="463" width="355" height="464" frameX="0" frameY="-2" frameWidth="355" frameHeight="466"/>
+	<SubTexture name="Gun Sing Note UP0035" x="712" y="463" width="355" height="464" frameX="0" frameY="-2" frameWidth="355" frameHeight="466"/>
+	<SubTexture name="Gun Sing Note UP0036" x="712" y="463" width="355" height="464" frameX="0" frameY="-2" frameWidth="355" frameHeight="466"/>
+	<SubTexture name="Gun Sing Note UP0037" x="712" y="463" width="355" height="464" frameX="0" frameY="-2" frameWidth="355" frameHeight="466"/>
+	<SubTexture name="Gun Sing Note UP0038" x="712" y="463" width="355" height="464" frameX="0" frameY="-2" frameWidth="355" frameHeight="466"/>
+	<SubTexture name="Gun Sing Note UP0039" x="712" y="463" width="355" height="464" frameX="0" frameY="-2" frameWidth="355" frameHeight="466"/>
+	<SubTexture name="Gun Sing Note UP0040" x="712" y="463" width="355" height="464" frameX="0" frameY="-2" frameWidth="355" frameHeight="466"/>
+	<SubTexture name="Gun Sing Note UP0041" x="712" y="463" width="355" height="464" frameX="0" frameY="-2" frameWidth="355" frameHeight="466"/>
+	<SubTexture name="Gun Sing Note UP0042" x="712" y="463" width="355" height="464" frameX="0" frameY="-2" frameWidth="355" frameHeight="466"/>
+	<SubTexture name="Gun Sing Note UP0043" x="712" y="463" width="355" height="464" frameX="0" frameY="-2" frameWidth="355" frameHeight="466"/>
+	<SubTexture name="Gun Sing Note UP0044" x="712" y="463" width="355" height="464" frameX="0" frameY="-2" frameWidth="355" frameHeight="466"/>
+	<SubTexture name="Gun Sing Note UP0045" x="712" y="463" width="355" height="464" frameX="0" frameY="-2" frameWidth="355" frameHeight="466"/>
+	<SubTexture name="Gun Sing Note UP0046" x="712" y="463" width="355" height="464" frameX="0" frameY="-2" frameWidth="355" frameHeight="466"/>
+	<SubTexture name="Gun Sing Note UP0047" x="712" y="463" width="355" height="464" frameX="0" frameY="-2" frameWidth="355" frameHeight="466"/>
+	<SubTexture name="Gun Sing Note UP0048" x="712" y="463" width="355" height="464" frameX="0" frameY="-2" frameWidth="355" frameHeight="466"/>
+	<SubTexture name="Gun Sing Note UP0049" x="712" y="463" width="355" height="464" frameX="0" frameY="-2" frameWidth="355" frameHeight="466"/>
+	<SubTexture name="Gun Sing Note UP0050" x="712" y="463" width="355" height="464" frameX="0" frameY="-2" frameWidth="355" frameHeight="466"/>
+	<SubTexture name="Gun Sing Note UP0051" x="712" y="463" width="355" height="464" frameX="0" frameY="-2" frameWidth="355" frameHeight="466"/>
+	<SubTexture name="Gun Sing Note UP0052" x="712" y="463" width="355" height="464" frameX="0" frameY="-2" frameWidth="355" frameHeight="466"/>
+	<SubTexture name="Gun Sing Note UP0053" x="712" y="463" width="355" height="464" frameX="0" frameY="-2" frameWidth="355" frameHeight="466"/>
+	<SubTexture name="Gun Sing Note UP0054" x="712" y="463" width="355" height="464" frameX="0" frameY="-2" frameWidth="355" frameHeight="466"/>
+	<SubTexture name="Gun Sing Note UP0055" x="712" y="463" width="355" height="464" frameX="0" frameY="-2" frameWidth="355" frameHeight="466"/>
+	<SubTexture name="Gun Sing Note UP0056" x="712" y="463" width="355" height="464" frameX="0" frameY="-2" frameWidth="355" frameHeight="466"/>
+	<SubTexture name="Gun Sing Note UP0057" x="712" y="463" width="355" height="464" frameX="0" frameY="-2" frameWidth="355" frameHeight="466"/>
+	<SubTexture name="Gun Sing Note UP0058" x="712" y="463" width="355" height="464" frameX="0" frameY="-2" frameWidth="355" frameHeight="466"/>
+	<SubTexture name="Gun Sing Note UP0059" x="712" y="463" width="355" height="464" frameX="0" frameY="-2" frameWidth="355" frameHeight="466"/>
+	<SubTexture name="Gun idle dance0000" x="1067" y="463" width="359" height="452" frameX="-7" frameY="0" frameWidth="370" frameHeight="452"/>
+	<SubTexture name="Gun idle dance0001" x="1067" y="463" width="359" height="452" frameX="-7" frameY="0" frameWidth="370" frameHeight="452"/>
+	<SubTexture name="Gun idle dance0002" x="1426" y="463" width="370" height="448" frameX="0" frameY="-4" frameWidth="370" frameHeight="452"/>
+	<SubTexture name="Gun idle dance0003" x="1426" y="463" width="370" height="448" frameX="0" frameY="-4" frameWidth="370" frameHeight="452"/>
+	<SubTexture name="Gun idle dance0004" x="0" y="929" width="368" height="450" frameX="-1" frameY="-2" frameWidth="370" frameHeight="452"/>
+	<SubTexture name="Gun idle dance0005" x="0" y="929" width="368" height="450" frameX="-1" frameY="-2" frameWidth="370" frameHeight="452"/>
+	<SubTexture name="Gun idle dance0006" x="368" y="929" width="365" height="450" frameX="-2" frameY="-2" frameWidth="370" frameHeight="452"/>
+	<SubTexture name="Gun idle dance0007" x="368" y="929" width="365" height="450" frameX="-2" frameY="-2" frameWidth="370" frameHeight="452"/>
+	<SubTexture name="Gun idle dance0008" x="733" y="929" width="361" height="452" frameX="-6" frameY="0" frameWidth="370" frameHeight="452"/>
+	<SubTexture name="Gun idle dance0009" x="733" y="929" width="361" height="452" frameX="-6" frameY="0" frameWidth="370" frameHeight="452"/>
+	<SubTexture name="Gun idle dance0010" x="1067" y="463" width="359" height="452" frameX="-7" frameY="0" frameWidth="370" frameHeight="452"/>
+	<SubTexture name="Gun idle dance0011" x="1067" y="463" width="359" height="452" frameX="-7" frameY="0" frameWidth="370" frameHeight="452"/>
+</TextureAtlas>

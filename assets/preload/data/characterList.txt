@@ -1,0 +1,12 @@
+bf
+dad
+gf
+gun-yes-gun
+gun-p2-yes-gun-p2
+gun-clone-yes-gun-clone
+bf-gun
+bf-gun-p2
+bf-gun-clone
+boss
+dark
+ham
