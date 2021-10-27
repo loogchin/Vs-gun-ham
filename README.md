@@ -57,10 +57,6 @@ If you're looking for documentation, changelogs, or guides, you can find those o
 	**add multicharacter**
 	
 
-
-# Credits
-### Custom Build'
- - [Nong vanila](https://www.youtube.com/channel/UCGwph3rtuvm9D7yvjceZBbg) - Programming
 ### Friday Night Funkin'
  - [ninjamuffin99](https://twitter.com/ninja_muffin99) - Programming
  - [PhantomArcade3K](https://twitter.com/phantomarcade3k) and [Evilsk8r](https://twitter.com/evilsk8r) - Art
