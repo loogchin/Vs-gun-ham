@@ -107,6 +107,8 @@ class PlayState extends MusicBeatState
 
 	var babyArrow:FlxSprite;
 
+	var evilTrail:FlxTrail;
+
 	public static var p1CamFollowNoteMovementX:Int = 0;
 	public static var p1CamFollowNoteMovementY:Int = 0;
 
@@ -865,9 +867,9 @@ class PlayState extends MusicBeatState
 						font.active = false;
 						add(font);
 
-						gf = new Character(0, 0, 'RedBlue-gf-gun');
-						boyfriend = new Boyfriend(0, 0, 'RedBlue-bf-gun-p2');
-						dad = new Character(0, 0, 'RedBlue-gun-p2-yes-gun-p2');
+						//gf = new Character(0, 0, 'RedBlue-gf-gun');
+						//boyfriend = new Boyfriend(0, 0, 'RedBlue-bf-gun-p2');
+						//dad = new Character(0, 0, 'RedBlue-gun-p2-yes-gun-p2');
 				}
 			case 'ham':
 				{
@@ -956,6 +958,22 @@ class PlayState extends MusicBeatState
 						font.active = false;
 						add(font);
 				}
+			case 'murder':
+				{
+						defaultCamZoom = 0.9;
+						curStage = 'murder';
+						back = new FlxSprite(-650, -100).loadGraphic(Paths.image('murder/back','shared'));
+						back.antialiasing = true;
+						back.scrollFactor.set(1.3, 1.3);
+						back.active = false;
+						add(back);
+						
+						font = new FlxSprite(-600, -200).loadGraphic(Paths.image('murder/font','shared'));
+						font.antialiasing = true;
+						font.scrollFactor.set(0.9, 0.9);
+						font.active = false;
+						add(font);
+				}
 		}
 		}
 		//defaults if no gf was found in chart
@@ -988,6 +1006,17 @@ class PlayState extends MusicBeatState
 			default:
 				curGf = 'gf';
 		}
+
+		if (SONG.song.toLowerCase().startsWith('gun'))
+			{
+				dad = new Character(100, 100, 'RedBlue-gun-p2-yes-gun-p2');
+				boyfriend = new Boyfriend(770, 450, 'RedBlue-bf-gun-p2');
+				gf = new Character(400, 130, 'RedBlue-gf-gun');
+				remove(boyfriend);
+				remove(dad);
+				remove(gf);
+			}
+		
 		
 		gf = new Character(400, 130, curGf);
 		gf.scrollFactor.set(0.95, 0.95);
@@ -1038,6 +1067,18 @@ class PlayState extends MusicBeatState
 				dad.y += 140;
 			case 'boss':
 				dad.y -= 20;
+			case 'error-gun':
+				if(FlxG.save.data.distractions){
+					evilTrail = new FlxTrail(dad, null, 1, 24, 0.6, 0.9);
+					add(evilTrail);
+				}
+				dad.y += 250;
+			case 'murder-gun' | 'murder-gun2':
+				if(FlxG.save.data.distractions){
+					evilTrail = new FlxTrail(dad, null, 1, 24, 0.6, 0.9);
+					add(evilTrail);
+				}
+				dad.y += 250;
 		}
 
 		boyfriend = new Boyfriend(770, 450, SONG.player1);
@@ -1067,7 +1108,7 @@ class PlayState extends MusicBeatState
 			case 'schoolEvil':
 				if(FlxG.save.data.distractions){
 				// trailArea.scrollFactor.set();
-				var evilTrail = new FlxTrail(dad, null, 4, 24, 0.3, 0.069);
+				evilTrail = new FlxTrail(dad, null, 4, 24, 0.3, 0.069);
 				// evilTrail.changeValuesEnabled(false, false, false, false);
 				// evilTrail.changeGraphic()
 				add(evilTrail);
@@ -1226,6 +1267,12 @@ class PlayState extends MusicBeatState
 		kadeEngineWatermark.setFormat(Paths.font("vcr.ttf"), 16, FlxColor.WHITE, RIGHT, FlxTextBorderStyle.OUTLINE,FlxColor.BLACK);
 		kadeEngineWatermark.scrollFactor.set();
 		add(kadeEngineWatermark);
+		
+		/*var portby:FlxText = new FlxText(0,0,0,"Port by Nong vanila", 32);
+		portby.setFormat(Paths.font("vcr.ttf"), 16, FlxColor.WHITE, RIGHT, FlxTextBorderStyle.OUTLINE,FlxColor.BLACK);
+		portby.scrollFactor.set();
+		portby.cameras = [camHUD];
+		add(portby);*/
 
 		if (PlayStateChangeables.useDownscroll)
 			kadeEngineWatermark.y = FlxG.height * 0.9 + 45;
@@ -1270,7 +1317,6 @@ class PlayState extends MusicBeatState
 
 		strumLineNotes.cameras = [camHUD];
 		notes.cameras = [camHUD];
-		//notes.cameras = [noteHUD];
 		healthBar.cameras = [camHUD];
 		healthBarBG.cameras = [camHUD];
 		iconP1.cameras = [camHUD];
@@ -2104,13 +2150,15 @@ class PlayState extends MusicBeatState
 	public var removedVideo = false;
 
 	var swaynote:Bool = false;
-
 	var camMove:Bool = false;
-
 	var shakecam:Bool = false;
+	var floatHud:Bool = false;
+	public var elapsedtime:Float = 0;
 
 	override public function update(elapsed:Float)
 	{
+		elapsedtime += elapsed;
+		
 	/*	if (shakeNote)
 			{
 				noteHUD.shake(0.005, 0);
@@ -2124,11 +2172,11 @@ class PlayState extends MusicBeatState
 			{
 				FlxG.camera.shake(0.05, 0.05);
 			}
-		if (angle)
+		if (floatHud)
 			{
-				FlxG.camera.angle += 0.5;
+				camHUD.angle = Math.sin((Conductor.songPosition / 1000)*(Conductor.bpm/60) * 1.0) * 2.0;
 			}
-		
+			
 		#if !debug
 		perfectMode = false;
 		#end
@@ -3260,7 +3308,6 @@ class PlayState extends MusicBeatState
 						add(sploosh);
 						sploosh.cameras = [camHUD];
 						sploosh.animation.play('splash ' + FlxG.random.int(0, 1) + " " + daNote.noteData);
-						//sploosh.alpha = 0.6;
 						sploosh.offset.x += 90;
 						sploosh.offset.y += 80;
 						sploosh.animation.finishCallback = function(name) sploosh.kill();
@@ -3284,14 +3331,13 @@ class PlayState extends MusicBeatState
 						add(sploosh);
 						sploosh.cameras = [camHUD];
 						sploosh.animation.play('splash ' + FlxG.random.int(0, 1) + " " + daNote.noteData);
-						//sploosh.alpha = 0.6;
 						sploosh.offset.x += 90;
 						sploosh.offset.y += 80;
 						sploosh.animation.finishCallback = function(name) sploosh.kill();
 					}
 				}
 			}
-			
+
 			var noteDiff:Float = -(daNote.strumTime - Conductor.songPosition);
 			var wife:Float = EtternaFunctions.wife3(-noteDiff, Conductor.timeScale);
 			// boyfriend.playAnim('hey');
@@ -4311,12 +4357,12 @@ class PlayState extends MusicBeatState
 		}
 		#end
 
-		/*if (SONG.song.toLowerCase() == 'your song')
+		if (SONG.song.toLowerCase() == 'your song')
 			switch (curStep)
 			{
 				case 1:
 			}
-		*/
+		
 
 		if (curSong.toLowerCase() == 'wtf' && curStep >= 385 && curStep < 415)
 			{
@@ -4360,7 +4406,7 @@ class PlayState extends MusicBeatState
 		{
 			boyfriend.playAnim('scared');
 		}
-		if (SONG.song.toLowerCase() == 'gun')
+		if (SONG.song.toLowerCase() == 'gun') //Dj L land Pls don't steal the code
 			switch (curStep)
 			{
 				case 323:
@@ -5030,20 +5076,6 @@ class PlayState extends MusicBeatState
 			camHUD.shake(0.05,0.05);
 			health = 0.1;
 		}
-	function floatCam(id:Bool)
-		{
-			if(id)
-			{
-				camHUD.angle = -4;
-				swaynote = true;
-			}
-			else
-			{
-				camHUD.angle = 0;
-				swaynote = false;
-			}
-		}
-
 
 	var curLight:Int = 0;
 }

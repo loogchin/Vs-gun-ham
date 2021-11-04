@@ -35,6 +35,11 @@ class FreeplayState extends MusicBeatState
 	var intendedScore:Int = 0;
 	var combo:String = '';
 
+	var bg:FlxSprite;
+	var bossbg:FlxSprite;
+
+	var char:FlxSprite;
+
 	private var grpSongs:FlxTypedGroup<Alphabet>;
 	private var curPlaying:Bool = false;
 
@@ -73,8 +78,26 @@ class FreeplayState extends MusicBeatState
 
 		// LOAD CHARACTERS
 
-		var bg:FlxSprite = new FlxSprite().loadGraphic(Paths.image('menuBGBlue'));
+		bg = new FlxSprite().loadGraphic(Paths.image('menuBG'));
 		add(bg);
+		
+		bossbg = new FlxSprite().loadGraphic(Paths.image('bossBG'));
+		bossbg.alpha = 0;
+		add(bossbg);
+
+		char = new FlxSprite(500);
+		char.frames = Paths.getSparrowAtlas('freeplaychar','shared');
+		char.animation.addByPrefix('boss', 'boss idle dance', 24);
+		char.animation.addByPrefix('clone', 'clone idle dance', 24);
+		char.animation.addByPrefix('dark', 'Dark idle dance', 24);
+		char.animation.addByPrefix('error', 'Error idle dance', 24);
+		char.animation.addByPrefix('gun', 'Gun idle dance', 24);
+		char.animation.addByPrefix('gunp2', 'Gun2 idle dance', 24);
+		char.animation.addByPrefix('ham', 'Ham idle dance', 24);
+		char.animation.addByPrefix('murder', 'murder idle dance', 24);
+		char.animation.addByPrefix('gf', 'GF Dancing Beat', 24);
+		//char.animation.play('idle');
+		add(char);
 
 		grpSongs = new FlxTypedGroup<Alphabet>();
 		add(grpSongs);
@@ -85,7 +108,6 @@ class FreeplayState extends MusicBeatState
 			songText.isMenuItem = true;
 			songText.targetY = i;
 			grpSongs.add(songText);
-
 			var icon:HealthIcon = new HealthIcon(songs[i].songCharacter);
 			icon.sprTracker = songText;
 
@@ -147,8 +169,8 @@ class FreeplayState extends MusicBeatState
 			trace(md);
 		 */
 
-		/* var txt:FlxText = new FlxText(0, 0, FlxG.width,
-            "Press P to Play Song");
+		var txt:FlxText = new FlxText(0, 0, FlxG.width,
+            "Press P to preview Song");
         
         txt.setFormat("VCR OSD Mono", 32, FlxColor.fromRGB(200, 200, 200), CENTER);
         txt.borderColor = FlxColor.BLACK;
@@ -156,7 +178,7 @@ class FreeplayState extends MusicBeatState
         txt.borderStyle = FlxTextBorderStyle.OUTLINE;
         txt.screenCenter();
 		txt.y += 200;
-        add(txt);*/
+        add(txt);
 
 		super.create();
 	}
@@ -197,6 +219,66 @@ class FreeplayState extends MusicBeatState
 
 		scoreText.text = "PERSONAL BEST:" + lerpScore;
 		comboText.text = combo + '\n';
+
+		switch (songs[curSelected].songName.toLowerCase())
+		{
+			case 'tutorial':
+				bg.color = FlxColor.fromRGB(245, 66, 152);
+				char.animation.play('gf');
+				char.flipX = false;
+				char.x = 500;
+				char.y = 0;
+				bossbg.alpha = 0;
+			case 'wtf' | 'epic':
+				bg.color = FlxColor.fromString('#FFFFFFFF');
+				char.animation.play('gun');
+				char.flipX = true;
+				char.x = 800;
+				char.y = 200;
+				bossbg.alpha = 0;
+			case 'gun':
+				bg.color = FlxColor.fromString('#FFFFFFFF');
+				char.animation.play('gunp2');
+				char.flipX = true;
+				char.x = 750;
+				char.y = 200;
+				bossbg.alpha = 0;
+			case 'bad-day':
+				bg.color = FlxColor.fromString('#FFDFE3FF');
+				char.animation.play('clone');
+				char.flipX = true;
+				char.x = 750;
+				char.y = 100;
+				bossbg.alpha = 0;
+			case 'ham':
+				bg.color = FlxColor.fromString('#FFD0EEFF');
+				char.animation.play('ham');
+				char.flipX = true;
+				char.x = 700;
+				char.y = 0;
+				bossbg.alpha = 0;
+			case 'redeember':
+				bg.color = FlxColor.fromString('#FFD0EEFF');
+				char.animation.play('dark');
+				char.flipX = true;
+				char.x = 700;
+				char.y = 50;
+				bossbg.alpha = 0;
+			case 'boss-zone':
+				bg.color = FlxColor.fromString('#FF131313');
+				char.animation.play('boss');
+				char.flipX = true;
+				char.x = 700;
+				char.y = 0;
+				bossbg.alpha = 1;
+			case 'kill-time':
+				bg.color = FlxColor.fromString('#FF949AC1');
+				char.animation.play('murder');
+				char.flipX = true;
+				char.x = 800;
+				char.y = 200;
+				bossbg.alpha = 0;
+		}
 
 		var upP = FlxG.keys.justPressed.UP;
 		var downP = FlxG.keys.justPressed.DOWN;
@@ -239,10 +321,10 @@ class FreeplayState extends MusicBeatState
 		if (FlxG.keys.justPressed.RIGHT)
 			changeDiff(1);
 
-		/*if (FlxG.keys.justPressed.P)
+		if (FlxG.keys.justPressed.P)
 		{
 			FlxG.sound.playMusic(Paths.inst(songs[curSelected].songName), 0);
-		}*/
+		}
 
 		if (controls.BACK)
 		{
@@ -330,7 +412,7 @@ class FreeplayState extends MusicBeatState
 		#end
 
 		#if PRELOAD_ALL
-		FlxG.sound.playMusic(Paths.inst(songs[curSelected].songName), 0);
+		//FlxG.sound.playMusic(Paths.inst(songs[curSelected].songName), 0);
 		#end
 
 		var bullShit:Int = 0;

@@ -47,10 +47,16 @@ class HealthIcon extends FlxSprite
 		animation.add('RedBlue-gf-gun', [16], 0, false, isPlayer);
 		animation.add('RedBlue-bf-gun-p2', [28, 29], 0, false, isPlayer);
 		animation.add('gun-clone-yes-gun-clone', [32, 33], 0, false, isPlayer);
+		animation.add('bf-gun-yes-gun', [24, 25], 0, false, isPlayer);
 		animation.add('boss', [34, 35], 0, false, isPlayer);
 		animation.add('dark', [36, 37], 0, false, isPlayer);
 		animation.add('ham', [38, 39], 0, false, isPlayer);
-		animation.add('bf-gun-yes-gun', [24, 25], 0, false, isPlayer);
+		animation.add('murder-gun', [40, 41], 0, false, isPlayer);
+		animation.add('murder-gun2', [40, 41], 0, false, isPlayer);
+		animation.add('plam', [42, 43], 0, false, isPlayer);
+		animation.add('red-eye', [44, 45], 0, false, isPlayer);
+		animation.add('error-gun', [46, 47], 0, false, isPlayer);
+		
 		animation.play(char);
 
 		switch(char)

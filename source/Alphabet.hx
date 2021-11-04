@@ -21,6 +21,7 @@ class Alphabet extends FlxSpriteGroup
 
 	// for menu shit
 	public var targetY:Float = 0;
+	public var freeY:Float = 0;
 	public var isMenuItem:Bool = false;
 
 	public var text:String = "";

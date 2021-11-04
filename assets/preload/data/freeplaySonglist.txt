@@ -6,3 +6,4 @@ bad-day:gun-clone-yes-gun-clone:2
 ham:ham:3
 redeember:dark:4
 boss-zone:boss:5
+kill-time:murder-gun:6

@@ -10,3 +10,7 @@ bf-gun-clone
 boss
 dark
 ham
+murder-gun
+error-gun
+murder-gun2
+murder-gun-bf

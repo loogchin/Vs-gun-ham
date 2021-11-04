@@ -47,8 +47,20 @@ If you're looking for documentation, changelogs, or guides, you can find those o
  - **Replays** (in beta)
 	 - Have you ever gotten a crazy score but didn't record? The replay system solves that: it automatically saves a "replay" of your gameplay every time you complete a song, which you can play back inside of the game. 
 	 - Replays just store information about what you're doing, they don't actually record the screen -- so they take up way less space on your disk than videos.
+ - **Audio offset**
+	 - If your headphones are delayed, you can set an offset in the options menu to line the game up with the delay and play with synced audio like intended.
+	**notesplash off/on**
+	**healthbar color**
+	**press 1 to skip song**
+	**animation debug no debug mode**
+	**new animation debug by verex**
+	**add multicharacter**
+	
 
 
+# Credits
+### Custom Build'
+ - [Nong vanila](https://www.youtube.com/channel/UCGwph3rtuvm9D7yvjceZBbg) - Programming
 ### Friday Night Funkin'
  - [ninjamuffin99](https://twitter.com/ninja_muffin99) - Programming
  - [PhantomArcade3K](https://twitter.com/phantomarcade3k) and [Evilsk8r](https://twitter.com/evilsk8r) - Art
